@@ -1,0 +1,29 @@
+{
+  "type": "MultipleChildren",
+  "props": {
+    "some": "value",
+    "children": [{
+      "type": "SingleChild",
+      "props": {
+        "children": {
+          "runtime": true,
+          "name": "inline",
+          "type": "InlineChild",
+          "props": {
+            "children": "child"
+          }
+        }
+      }
+    }, {
+      "type": "PropsNestedChildren",
+      "props": {
+        "nested": {
+          "value": [{
+            "type": "NestedChild",
+            "props": {}
+          }]
+        }
+      }
+    }]
+  }
+}
